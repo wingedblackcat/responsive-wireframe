@@ -1,0 +1,230 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1400px;
+}
+.header .logo-contanier {
+    text-align: center;
+}
+.header .nav-bar {
+    margin: 35px;
+    width: 80%;
+    text-align: center;
+}
+.nav-bar .mobile-nav {
+    display: none;
+}
+.mobile-nav .mobile-menu {
+    float: right;
+    width: 75px;
+}
+.mobile-menu img {
+    max-width: 100%; 
+}
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.header ul li {
+    margin: 0 16px;
+    display: inline-block;
+    width: 16%;
+    height: 2em;
+    background-color: #cfd3d7;
+    border-radius: 5px;
+}
+.header .logo-contanier {
+    margin: 0;
+}
+.header .logo {
+    background-color: #c3c8cd;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+main.main {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    max-width: 1600px;
+}
+.main .carousel {
+    border-bottom: 10px solid #c3c8cd;
+    border-top: 10px solid #c3c8cd;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main .slides-container {
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    overflow-x: auto;
+}
+.slide {
+    display: flex;
+    position: relative;
+    overflow-x: auto;
+    background-color: #dbdfe5;
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+}
+.slide-info {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.slide-info h2 {
+    height: 2em;
+    margin: auto;
+    width: 60%;
+    background-color: #c3c8cd;
+    border-radius: 5px;
+}
+.slide-info p {
+    height: 1.3em;
+    background-color: #cfd3d7;
+    border-radius: 5px;
+}
+.product-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product {
+    margin: auto;
+    text-align: center;
+    width: 30%;
+    margin-top: 16px;
+    padding: 8px;
+}
+.product .img-container {
+    margin: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 250px;
+    background-color: #c3c8cd;
+}
+.product .product-title {
+    background-color: #adb3b9;
+    height: 1.6em;
+    width: 70%;
+    border-radius: 5px;
+}
+.product p {
+    height: 1.3em;
+    background-color: #cfd3d7;
+    border-radius: 5px;
+}
+@media screen and (max-width: 1024px) {
+    header.header {
+        margin-top: 25px;
+    }
+    .header .logo-contanier {
+        text-align: center;
+    }
+    .main .slides-container {
+        height: 300px;
+    }
+    .slide-info {
+        text-align: center;
+        margin: auto;
+    }
+    .slide-info h2 {
+        height: 1.8em;
+        width: 45%;
+    }
+    .slide-info p {
+        margin: 10px auto;
+        height: 1em;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 839px) {
+    .header ul li {
+        width: 20%;
+        margin: 0 8px;
+    }
+    .header .logo {
+        width: 75px;
+        height: 75px;
+    }
+    .main .slides-container {
+        height: 350px;
+    }
+    .slide-info h2 {
+        height: 1.5em;
+        width: 60%;
+    }
+    .slide-info p {
+        height: 1em;
+        width: 70%;
+    }
+    .product {
+        width: 40%;
+    }
+    .product .product-title {
+        height: 1.3em;
+        width: 70%;
+    }
+    .product p {
+        height: 1em;
+    }
+}
+@media screen and (max-width: 480px) {
+    header.header {
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .header .logo-contanier {
+        padding-left: 16px;
+        text-align: center;
+    }
+    .header .nav-bar {
+        margin: 35px;
+        width: 80%;
+        text-align: center;
+    }
+    .header ul {
+        display: none;
+    }
+    .header .mobile-nav {
+        text-align: end;
+        display: block;
+    }
+    .header .logo-contanier {
+        margin: 10px 8px;
+    }
+    .main .slides-container {
+        height: 200px;
+    }
+    .slide-info {
+        width: 80%;
+    }
+    .slide-info h2 {
+        width: 75%;
+        height: 1em;
+    }
+    .slide-info p {
+        height: 0.9em;
+    }
+    .product {
+        width: 90%;
+    }
+}
